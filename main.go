@@ -6,7 +6,9 @@ import (
 )
 
 func main() {
-	input := []int{2,3,1,1,4}
-	result := jump(input)
+	var (
+		input  = []int{2, 3, 1, 1, 4}
+		result = jump(input)
+	)
 	fmt.Println(result)
 }

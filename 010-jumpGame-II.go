@@ -2,7 +2,7 @@ package main
 
 func jump(nums []int) int {
 
-	if (len(nums) == 1) {
+	if len(nums) == 1 {
 		return 0
 	}
 
@@ -10,7 +10,7 @@ func jump(nums []int) int {
 
 	knownPaths := make(map[int]int)
 
-	jumpInternally = func (i int) int {
+	jumpInternally = func(i int) int {
 		value, exists := knownPaths[i]
 		if exists {
 			return value
@@ -18,7 +18,7 @@ func jump(nums []int) int {
 
 		distance := nums[i]
 
-		if (distance + i >= len(nums) - 1) {
+		if distance+i >= len(nums)-1 {
 			return 1
 		}
 

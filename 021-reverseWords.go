@@ -11,13 +11,13 @@ func reverseWords(s string) string {
 		curr := s[i]
 
 		var prev byte
-		if (i < len(s) - 1) {
-			prev = s[i + 1]
+		if i < len(s)-1 {
+			prev = s[i+1]
 		}
 
 		var next byte
-		if (i > 0) {
-			next = s[i - 1]
+		if i > 0 {
+			next = s[i-1]
 		}
 
 		currIsSpace := unicode.IsSpace(rune(curr))
@@ -29,11 +29,11 @@ func reverseWords(s string) string {
 		}
 
 		if !currIsSpace && (nextIsSpace || next == 0) {
-			if (reversed != "") {
+			if reversed != "" {
 				reversed += string(" ")
 			}
 
-			word := s[i:beginWordPointer + 1]
+			word := s[i : beginWordPointer+1]
 			reversed += word
 
 			beginWordPointer = -1

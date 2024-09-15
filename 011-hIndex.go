@@ -14,9 +14,9 @@ func hIndex(citations []int) int {
 	for i := 0; i < size; i++ {
 		citation := citations[i]
 
-		if citation < size - i {
+		if citation < size-i {
 			hIndex = citation
-		} else if citation >= size - i {
+		} else if citation >= size-i {
 			return size - i
 		}
 	}
