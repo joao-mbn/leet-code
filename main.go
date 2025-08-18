@@ -1,8 +1,20 @@
 // Package main is the entry point for the program.
 package main
 
+import "fmt"
+
 func main() {
-	gas := []int{4, 5, 3, 1, 4}
-	cost := []int{5, 4, 3, 4, 2}
-	canCompleteCircuit(gas, cost)
+	for _, input := range [][]string{
+		{"flower", "flow", "flight"},
+		{"flower", "flow", ""},
+		{"", "flow", "flower"},
+		{"flow", "flow", "flow"},
+		{"flow", "flow", "flower"},
+		{},
+		{"flower"},
+		{"dog", "racecar", "car"},
+	} {
+		result := longestCommonPrefix(input)
+		fmt.Printf("The largest common prefix for input %v is : %v\n", input, result)
+	}
 }
