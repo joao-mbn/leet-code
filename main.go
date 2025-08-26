@@ -5,13 +5,20 @@ import "fmt"
 
 func main() {
 	for _, input := range []struct {
-		strs []string
+		intervals [][]int
 	}{
-		{strs: []string{""}},
-		{strs: []string{"a"}},
-		{strs: []string{"eat", "tea", "tan", "ate", "nat", "bat"}},
+		{intervals: [][]int{{8, 10}, {1, 3}, {2, 6}, {15, 18}}},
+		{intervals: [][]int{{1, 3}, {2, 6}, {8, 10}, {15, 18}}},
+		{intervals: [][]int{{15, 18}, {1, 4}, {4, 5}}},
+		{intervals: [][]int{{1, 4}, {4, 5}}},
+		{intervals: [][]int{{1, 4}}},
+		{intervals: [][]int{{4, 4}}},
+		{intervals: [][]int{{0, 0}}},
+		{intervals: [][]int{{1, 1}, {1, 1}}},
+		{intervals: [][]int{{1, 1}, {1, 4}}},
+		{intervals: [][]int{{1, 1}, {2, 4}}},
 	} {
-		result := groupAnagrams(input.strs)
-		fmt.Printf("Given the slice %v, the grouped anagrams are: %v\n", input.strs, result)
+		result := merge(input.intervals)
+		fmt.Printf("Given the input: %v, the result is: %v\n", input.intervals, result)
 	}
 }
