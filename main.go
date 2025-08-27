@@ -5,20 +5,16 @@ import "fmt"
 
 func main() {
 	for _, input := range []struct {
-		intervals [][]int
+		path string
 	}{
-		{intervals: [][]int{{8, 10}, {1, 3}, {2, 6}, {15, 18}}},
-		{intervals: [][]int{{1, 3}, {2, 6}, {8, 10}, {15, 18}}},
-		{intervals: [][]int{{15, 18}, {1, 4}, {4, 5}}},
-		{intervals: [][]int{{1, 4}, {4, 5}}},
-		{intervals: [][]int{{1, 4}}},
-		{intervals: [][]int{{4, 4}}},
-		{intervals: [][]int{{0, 0}}},
-		{intervals: [][]int{{1, 1}, {1, 1}}},
-		{intervals: [][]int{{1, 1}, {1, 4}}},
-		{intervals: [][]int{{1, 1}, {2, 4}}},
+		{path: "/home/"},
+		{path: "/home//foo/"},
+		{path: "/home/user/Documents/../Pictures"},
+		{path: "/../"},
+		{path: "/.../a/../b/c/../d/./"},
+		{path: "/a/./b/../../c/"},
 	} {
-		result := merge(input.intervals)
-		fmt.Printf("Given the input: %v, the result is: %v\n", input.intervals, result)
+		result := simplifyPath(input.path)
+		fmt.Printf("Given the input: %v, the result is: %v\n", input.path, result)
 	}
 }
