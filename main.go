@@ -5,16 +5,23 @@ import "fmt"
 
 func main() {
 	for _, input := range []struct {
-		path string
+		l1 *ListNode
+		l2 *ListNode
 	}{
-		{path: "/home/"},
-		{path: "/home//foo/"},
-		{path: "/home/user/Documents/../Pictures"},
-		{path: "/../"},
-		{path: "/.../a/../b/c/../d/./"},
-		{path: "/a/./b/../../c/"},
+		{
+			l1: &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 3}}},
+			l2: &ListNode{Val: 5, Next: &ListNode{Val: 6, Next: &ListNode{Val: 4}}},
+		},
+		{
+			l1: &ListNode{Val: 0},
+			l2: &ListNode{Val: 0},
+		},
+		{
+			l1: &ListNode{Val: 9, Next: &ListNode{Val: 9, Next: &ListNode{Val: 9}}},
+			l2: &ListNode{Val: 9, Next: &ListNode{Val: 9}},
+		},
 	} {
-		result := simplifyPath(input.path)
-		fmt.Printf("Given the input: %v, the result is: %v\n", input.path, result)
+		result := addTwoNumbers(input.l1, input.l2)
+		fmt.Printf("Given the inputs: %v and %v, the result is: %v\n", input.l1, input.l2, result)
 	}
 }
