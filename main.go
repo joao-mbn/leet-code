@@ -5,27 +5,22 @@ import "fmt"
 
 func main() {
 	for _, input := range []struct {
-		preorder []int
-		ineorder []int
+		root *TreeNode
 	}{
 		{
-			preorder: []int{1, 2},
-			ineorder: []int{1, 2},
+			root: &TreeNode{Val: 3, Left: &TreeNode{Val: 9}, Right: &TreeNode{Val: 20, Left: &TreeNode{Val: 15}, Right: &TreeNode{Val: 7}}},
 		},
 		{
-			preorder: []int{1, 2, 4, 5, 9, 3, 6, 7, 15},
-			ineorder: []int{4, 2, 9, 5, 1, 6, 3, 15, 7},
+			root: &TreeNode{Val: 3, Left: &TreeNode{Val: 9, Left: &TreeNode{Val: 15}, Right: &TreeNode{Val: 7}}, Right: &TreeNode{Val: 20}},
 		},
 		{
-			preorder: []int{3, 9, 20, 15, 7},
-			ineorder: []int{9, 3, 15, 20, 7},
+			root: &TreeNode{Val: 3, Left: &TreeNode{Val: 9, Left: &TreeNode{Val: 15}, Right: &TreeNode{Val: 7}}},
 		},
 		{
-			preorder: []int{-1},
-			ineorder: []int{-1},
+			root: &TreeNode{Val: 3},
 		},
 	} {
-		result := buildTree(input.preorder, input.ineorder)
-		fmt.Printf("Given the inputs: %v and %v, the result is: %v\n", input.preorder, input.ineorder, result)
+		result := averageOfLevels(input.root)
+		fmt.Printf("Given the inputs: %v, the result is: %v\n", input.root, result)
 	}
 }
