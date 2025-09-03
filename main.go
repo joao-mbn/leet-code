@@ -5,22 +5,39 @@ import "fmt"
 
 func main() {
 	for _, input := range []struct {
-		root *TreeNode
+		haystack string
+		needle   string
 	}{
 		{
-			root: &TreeNode{Val: 3, Left: &TreeNode{Val: 9}, Right: &TreeNode{Val: 20, Left: &TreeNode{Val: 15}, Right: &TreeNode{Val: 7}}},
+			haystack: "mississippi",
+			needle:   "issip",
 		},
 		{
-			root: &TreeNode{Val: 3, Left: &TreeNode{Val: 9, Left: &TreeNode{Val: 15}, Right: &TreeNode{Val: 7}}, Right: &TreeNode{Val: 20}},
+			haystack: "sabubut",
+			needle:   "but",
 		},
 		{
-			root: &TreeNode{Val: 3, Left: &TreeNode{Val: 9, Left: &TreeNode{Val: 15}, Right: &TreeNode{Val: 7}}},
+			haystack: "sadbutsad",
+			needle:   "sad",
 		},
 		{
-			root: &TreeNode{Val: 3},
+			haystack: "sadbutsad",
+			needle:   "but",
+		},
+		{
+			haystack: "sadbutbut",
+			needle:   "but",
+		},
+		{
+			haystack: "leetcode",
+			needle:   "leeto",
+		},
+		{
+			haystack: "sad",
+			needle:   "sadbutsad",
 		},
 	} {
-		result := averageOfLevels(input.root)
-		fmt.Printf("Given the inputs: %v, the result is: %v\n", input.root, result)
+		result := strStr(input.haystack, input.needle)
+		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
