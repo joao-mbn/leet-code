@@ -5,39 +5,24 @@ import "fmt"
 
 func main() {
 	for _, input := range []struct {
-		haystack string
-		needle   string
+		root *TreeNode
 	}{
-		{
-			haystack: "mississippi",
-			needle:   "issip",
+		{root: &TreeNode{
+			Val: 4,
+			Left: &TreeNode{
+				Val:   2,
+				Left:  &TreeNode{Val: 1},
+				Right: &TreeNode{Val: 3},
+			},
+			Right: &TreeNode{
+				Val:   7,
+				Left:  &TreeNode{Val: 6},
+				Right: &TreeNode{Val: 9},
+			},
 		},
-		{
-			haystack: "sabubut",
-			needle:   "but",
-		},
-		{
-			haystack: "sadbutsad",
-			needle:   "sad",
-		},
-		{
-			haystack: "sadbutsad",
-			needle:   "but",
-		},
-		{
-			haystack: "sadbutbut",
-			needle:   "but",
-		},
-		{
-			haystack: "leetcode",
-			needle:   "leeto",
-		},
-		{
-			haystack: "sad",
-			needle:   "sadbutsad",
 		},
 	} {
-		result := strStr(input.haystack, input.needle)
+		result := invertTree(input.root)
 		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
