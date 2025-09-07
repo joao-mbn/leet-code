@@ -15,14 +15,12 @@ func main() {
 				Right: &TreeNode{Val: 3},
 			},
 			Right: &TreeNode{
-				Val:   7,
-				Left:  &TreeNode{Val: 6},
-				Right: &TreeNode{Val: 9},
+				Val: 6,
 			},
 		},
 		},
 	} {
-		result := invertTree(input.root)
+		result := getMinimumDifference(input.root)
 		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
