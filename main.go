@@ -5,22 +5,22 @@ import "fmt"
 
 func main() {
 	for _, input := range []struct {
-		root *TreeNode
+		grid [][]byte
 	}{
-		{root: &TreeNode{
-			Val: 4,
-			Left: &TreeNode{
-				Val:   2,
-				Left:  &TreeNode{Val: 1},
-				Right: &TreeNode{Val: 3},
-			},
-			Right: &TreeNode{
-				Val: 6,
-			},
-		},
-		},
+		{grid: [][]byte{
+			{'1', '1', '1', '1', '0'},
+			{'1', '1', '0', '1', '0'},
+			{'1', '1', '0', '0', '0'},
+			{'0', '0', '0', '0', '0'},
+		}},
+		{grid: [][]byte{
+			{'1', '1', '0', '0', '0'},
+			{'1', '1', '0', '0', '0'},
+			{'0', '0', '1', '0', '0'},
+			{'0', '0', '0', '1', '1'},
+		}},
 	} {
-		result := getMinimumDifference(input.root)
+		result := numIslands(input.grid)
 		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
