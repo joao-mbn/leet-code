@@ -8,19 +8,35 @@ func main() {
 		grid [][]byte
 	}{
 		{grid: [][]byte{
-			{'1', '1', '1', '1', '0'},
-			{'1', '1', '0', '1', '0'},
-			{'1', '1', '0', '0', '0'},
-			{'0', '0', '0', '0', '0'},
+			{'X', 'X', 'X', 'X'},
+			{'X', 'O', 'O', 'X'},
+			{'X', 'X', 'O', 'X'},
+			{'X', 'O', 'X', 'X'},
 		}},
 		{grid: [][]byte{
-			{'1', '1', '0', '0', '0'},
-			{'1', '1', '0', '0', '0'},
-			{'0', '0', '1', '0', '0'},
-			{'0', '0', '0', '1', '1'},
+			{'X', 'X', 'X', 'X'},
+			{'X', 'X', 'X', 'X'},
+			{'X', 'X', 'X', 'X'},
+			{'X', 'O', 'X', 'X'},
+		}},
+		{grid: [][]byte{
+			{'X', 'X'},
+			{'X', 'X'},
+		}},
+		{grid: [][]byte{
+			{'O', 'O'},
+			{'O', 'O'},
+		}},
+		{grid: [][]byte{
+			{'O'},
+		}},
+		{grid: [][]byte{
+			{'X', 'X', 'X'},
+			{'X', 'O', 'X'},
+			{'X', 'X', 'X'},
 		}},
 	} {
-		result := numIslands(input.grid)
-		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
+		solve(input.grid)
+		fmt.Printf("Given the inputs: %v, the result is: %v\n", input)
 	}
 }
