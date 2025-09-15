@@ -1,42 +1,21 @@
 // Package main is the entry point for the program'.'
 package main
 
-import "fmt"
+import (
+	"fmt"
+	tree "leet-code/Tree"
+)
 
 func main() {
+
 	for _, input := range []struct {
-		grid [][]byte
+		nums []int
 	}{
-		{grid: [][]byte{
-			{'X', 'X', 'X', 'X'},
-			{'X', 'O', 'O', 'X'},
-			{'X', 'X', 'O', 'X'},
-			{'X', 'O', 'X', 'X'},
-		}},
-		{grid: [][]byte{
-			{'X', 'X', 'X', 'X'},
-			{'X', 'X', 'X', 'X'},
-			{'X', 'X', 'X', 'X'},
-			{'X', 'O', 'X', 'X'},
-		}},
-		{grid: [][]byte{
-			{'X', 'X'},
-			{'X', 'X'},
-		}},
-		{grid: [][]byte{
-			{'O', 'O'},
-			{'O', 'O'},
-		}},
-		{grid: [][]byte{
-			{'O'},
-		}},
-		{grid: [][]byte{
-			{'X', 'X', 'X'},
-			{'X', 'O', 'X'},
-			{'X', 'X', 'X'},
-		}},
+		{nums: []int{-10}},
+		{nums: []int{-10, -3}},
+		{nums: []int{-10, -3, 0, 5, 9}},
 	} {
-		solve(input.grid)
-		fmt.Printf("Given the inputs: %v, the result is: %v\n", input)
+		result := tree.SortedArrayToBST(input.nums)
+		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
