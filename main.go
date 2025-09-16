@@ -3,19 +3,26 @@ package main
 
 import (
 	"fmt"
-	tree "leet-code/Tree"
+	heap "leet-code/Heap"
 )
 
 func main() {
 
 	for _, input := range []struct {
 		nums []int
+		k    int
 	}{
-		{nums: []int{-10}},
-		{nums: []int{-10, -3}},
-		{nums: []int{-10, -3, 0, 5, 9}},
+		{nums: []int{-1, 2, 0}, k: 1},
+		{nums: []int{3, 2, 3, 1, 2, 4, 5, 5, 6}, k: 4},
+		{nums: []int{3, 3, 3, 3}, k: 4},
+		{nums: []int{3, 3, 3, 3, 4}, k: 4},
+		{nums: []int{3, 3, 3, 3, 2}, k: 4},
+		{nums: []int{3}, k: 1},
+		{nums: []int{3, 3, 3, 1, 2}, k: 4},
+		{nums: []int{3, 3, 1, 2}, k: 3},
+		{nums: []int{3, 2, 1, 5, 6, 4}, k: 2},
 	} {
-		result := tree.SortedArrayToBST(input.nums)
+		result := heap.FindKthLargest(input.nums, input.k)
 		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
