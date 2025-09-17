@@ -1,0 +1,226 @@
+[
+  {
+      "filename": "merge-sorted-array",
+      "link": "https://leetcode.com/problems/merge-sorted-array/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "remove-element",
+      "link": "https://leetcode.com/problems/remove-element/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "remove-duplicates-from-sorted-array",
+      "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "remove-duplicates-from-sorted-array-ii",
+      "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "majority-element",
+      "link": "https://leetcode.com/problems/majority-element/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "rotate-array",
+      "link": "https://leetcode.com/problems/rotate-array/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "best-time-to-buy-and-sell-stock",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "best-time-to-buy-and-sell-stock-ii",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "jump-game",
+      "link": "https://leetcode.com/problems/jump-game/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "jump-game-ii",
+      "link": "https://leetcode.com/problems/jump-game-ii/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "h-index",
+      "link": "https://leetcode.com/problems/h-index/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "insert-delete-getrandom-o1",
+      "link": "https://leetcode.com/problems/insert-delete-getrandom-o1/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "product-of-array-except-self",
+      "link": "https://leetcode.com/problems/product-of-array-except-self/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "gas-station",
+      "link": "https://leetcode.com/problems/gas-station/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "candy",
+      "link": "https://leetcode.com/problems/candy/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "roman-to-integer",
+      "link": "https://leetcode.com/problems/roman-to-integer/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "integer-to-roman",
+      "link": "https://leetcode.com/problems/integer-to-roman/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "length-of-last-word",
+      "link": "https://leetcode.com/problems/length-of-last-word/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "longest-common-prefix",
+      "link": "https://leetcode.com/problems/longest-common-prefix/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "reverse-words-in-a-string",
+      "link": "https://leetcode.com/problems/reverse-words-in-a-string/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "find-the-index-of-the-first-occurrence-in-a-string",
+      "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "valid-palindrome",
+      "link": "https://leetcode.com/problems/valid-palindrome/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "container-with-most-water",
+      "link": "https://leetcode.com/problems/container-with-most-water/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "minimum-size-subarray-sum",
+      "link": "https://leetcode.com/problems/minimum-size-subarray-sum/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "valid-sudoku",
+      "link": "https://leetcode.com/problems/valid-sudoku/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "rotate-image",
+      "link": "https://leetcode.com/problems/rotate-image/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "valid-anagram",
+      "link": "https://leetcode.com/problems/valid-anagram/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "group-anagrams",
+      "link": "https://leetcode.com/problems/group-anagrams/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "two-sum",
+      "link": "https://leetcode.com/problems/two-sum/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "merge-intervals",
+      "link": "https://leetcode.com/problems/merge-intervals/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "valid-parentheses",
+      "link": "https://leetcode.com/problems/valid-parentheses/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "simplify-path",
+      "link": "https://leetcode.com/problems/simplify-path/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "linked-list-cycle",
+      "link": "https://leetcode.com/problems/linked-list-cycle/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "add-two-numbers",
+      "link": "https://leetcode.com/problems/add-two-numbers/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "merge-two-sorted-lists",
+      "link": "https://leetcode.com/problems/merge-two-sorted-lists/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "remove-nth-node-from-end-of-list",
+      "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "maximum-depth-of-binary-tree",
+      "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "invert-binary-tree",
+      "link": "https://leetcode.com/problems/invert-binary-tree/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "construct-binary-tree-from-preorder-and-inorder-traversal",
+      "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "average-of-levels-in-binary-tree",
+      "link": "https://leetcode.com/problems/average-of-levels-in-binary-tree/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "minimum-absolute-difference-in-bst",
+      "link": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "validate-binary-search-tree",
+      "link": "https://leetcode.com/problems/validate-binary-search-tree/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "number-of-islands",
+      "link": "https://leetcode.com/problems/number-of-islands/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "surrounded-regions",
+      "link": "https://leetcode.com/problems/surrounded-regions/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "implement-trie-prefix-tree",
+      "link": "https://leetcode.com/problems/implement-trie-prefix-tree/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "letter-combinations-of-a-phone-number",
+      "link": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "combination-sum",
+      "link": "https://leetcode.com/problems/combination-sum/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "generate-parentheses",
+      "link": "https://leetcode.com/problems/generate-parentheses/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "convert-sorted-array-to-binary-search-tree",
+      "link": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "maximum-subarray",
+      "link": "https://leetcode.com/problems/maximum-subarray/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "kth-largest-element-in-an-array",
+      "link": "https://leetcode.com/problems/kth-largest-element-in-an-array/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "single-number",
+      "link": "https://leetcode.com/problems/single-number/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "palindrome-number",
+      "link": "https://leetcode.com/problems/palindrome-number/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "plus-one",
+      "link": "https://leetcode.com/problems/plus-one/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "climbing-stairs",
+      "link": "https://leetcode.com/problems/climbing-stairs/?envType=study-plan-v2&envId=top-interview-150"
+  },
+  {
+      "filename": "best-time-to-buy-and-sell-stock-iii",
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/?envType=study-plan-v2&envId=top-interview-150"
+  }
+]
