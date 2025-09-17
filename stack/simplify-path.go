@@ -6,6 +6,10 @@ import (
 	"strings"
 )
 
+func SimplifyPath(path string) string {
+	return simplifyPath(path)
+}
+
 func simplifyPath(path string) string {
 	sections := strings.Split(path, "/")
 	canonicalSections := []string{}

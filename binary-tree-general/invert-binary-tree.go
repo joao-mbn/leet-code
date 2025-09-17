@@ -12,6 +12,10 @@ import "leet-code/tree"
  *     Right *TreeNode
  * }
  */
+func InvertTree(root *tree.TreeNode) *tree.TreeNode {
+	return invertTree(root)
+}
+
 func invertTree(root *tree.TreeNode) *tree.TreeNode {
 	if root == nil {
 		return root

@@ -2,6 +2,10 @@
 
 package matrix
 
+func IsValidSudoku(board [][]byte) bool {
+	return isValidSudoku(board)
+}
+
 func isValidSudoku(board [][]byte) bool {
 
 	// check rows, while building the columns

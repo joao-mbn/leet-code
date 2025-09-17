@@ -1,6 +1,10 @@
 // https://leetcode.com/problems/gas-station/?envType=study-plan-v2&envId=top-interview-150
 
-package dynamicprogramming
+package arraystring
+
+func CanCompleteCircuit(gas []int, cost []int) int {
+	return canCompleteCircuit(gas, cost)
+}
 
 func canCompleteCircuit(gas []int, cost []int) int {
 

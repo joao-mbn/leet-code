@@ -1,6 +1,10 @@
 // https://leetcode.com/problems/candy/?envType=study-plan-v2&envId=top-interview-150
 
-package dynamicprogramming
+package arraystring
+
+func Candy(ratings []int) int {
+	return candy(ratings)
+}
 
 func candy(ratings []int) int {
 	size := len(ratings)

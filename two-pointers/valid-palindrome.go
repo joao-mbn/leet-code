@@ -1,12 +1,16 @@
 // https://leetcode.com/problems/valid-palindrome/?envType=study-plan-v2&envId=top-interview-150
 
-package arraystring
+package twopointers
 
 import (
 	"fmt"
 	"regexp"
 	"strings"
 )
+
+func IsPalindrome(s string) bool {
+	return isPalindrome(s)
+}
 
 func isPalindrome(s string) bool {
 

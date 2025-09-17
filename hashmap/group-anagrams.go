@@ -4,6 +4,10 @@ package hashmap
 
 import "fmt"
 
+func GroupAnagrams(strs []string) [][]string {
+	return groupAnagrams(strs)
+}
+
 func groupAnagrams(strs []string) [][]string {
 	anagrams := [][]string{}
 	keys := map[string][]string{}

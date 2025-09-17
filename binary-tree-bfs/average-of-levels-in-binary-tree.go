@@ -12,6 +12,10 @@ import "leet-code/tree"
  *     Right *TreeNode
  * }
  */
+func AverageOfLevels(root *tree.TreeNode) []float64 {
+	return averageOfLevels(root)
+}
+
 func averageOfLevels(root *tree.TreeNode) []float64 {
 	track := avgTracker(root)
 	avgs := []float64{}

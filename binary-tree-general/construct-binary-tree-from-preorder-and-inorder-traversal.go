@@ -15,6 +15,10 @@ import (
  *     Right *TreeNode
  * }
  */
+func BuildTree(preorder []int, inorder []int) *tree.TreeNode {
+	return buildTree(preorder, inorder)
+}
+
 func buildTree(preorder []int, inorder []int) *tree.TreeNode {
 	root := &tree.TreeNode{
 		Val: preorder[0],

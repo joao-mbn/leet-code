@@ -2,6 +2,10 @@
 
 package arraystring
 
+func StrStr(haystack string, needle string) int {
+	return strStr(haystack, needle)
+}
+
 func strStr(haystack string, needle string) int {
 	sizeHaystack := len(haystack)
 	sizeNeedle := len(needle)

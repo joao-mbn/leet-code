@@ -1,6 +1,10 @@
 // https://leetcode.com/problems/jump-game-ii/?envType=study-plan-v2&envId=top-interview-150
 
-package dynamicprogramming
+package arraystring
+
+func Jump(nums []int) int {
+	return jump(nums)
+}
 
 func jump(nums []int) int {
 

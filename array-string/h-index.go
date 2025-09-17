@@ -6,6 +6,10 @@ import (
 	"slices"
 )
 
+func HIndex(citations []int) int {
+	return hIndex(citations)
+}
+
 func hIndex(citations []int) int {
 	hIndex := 0
 

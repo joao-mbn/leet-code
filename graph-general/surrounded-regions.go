@@ -2,6 +2,10 @@
 
 package graphgeneral
 
+func Solve(board [][]byte) {
+	solve(board)
+}
+
 func solve(board [][]byte) {
 	visited := map[int]map[int]bool{}
 	surroundedCells := [][2]int{}

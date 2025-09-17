@@ -12,6 +12,10 @@ import "leet-code/tree"
  *     Right *TreeNode
  * }
  */
+func GetMinimumDifference(root *tree.TreeNode) int {
+	return getMinimumDifference(root)
+}
+
 func getMinimumDifference(root *tree.TreeNode) int {
 	minDiff := -1
 	sortedBST := inorderTraversal(root, []int{})

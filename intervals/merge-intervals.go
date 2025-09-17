@@ -2,6 +2,10 @@
 
 package intervals
 
+func Merge(intervals [][]int) [][]int {
+	return merge(intervals)
+}
+
 func merge(intervals [][]int) [][]int {
 	if len(intervals) < 2 {
 		return intervals

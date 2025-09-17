@@ -2,6 +2,10 @@
 
 package slidingwindow
 
+func MinSubArrayLen(target int, nums []int) int {
+	return minSubArrayLen(target, nums)
+}
+
 func minSubArrayLen(target int, nums []int) int {
 	minLength := 0
 	track := 0

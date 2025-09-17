@@ -4,6 +4,10 @@ package arraystring
 
 import "unicode"
 
+func ReverseWords(s string) string {
+	return reverseWords(s)
+}
+
 func reverseWords(s string) string {
 
 	beginWordPointer := -1

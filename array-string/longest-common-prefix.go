@@ -4,6 +4,10 @@ package arraystring
 
 import "strings"
 
+func LongestCommonPrefix(strs []string) string {
+	return longestCommonPrefix(strs)
+}
+
 func longestCommonPrefix(strs []string) string {
 	if len(strs) == 0 {
 		return ""

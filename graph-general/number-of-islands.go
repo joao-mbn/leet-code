@@ -2,6 +2,10 @@
 
 package graphgeneral
 
+func NumIslands(grid [][]byte) int {
+	return numIslands(grid)
+}
+
 func numIslands(grid [][]byte) int {
 	count := 0
 

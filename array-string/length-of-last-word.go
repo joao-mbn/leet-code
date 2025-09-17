@@ -4,6 +4,10 @@ package arraystring
 
 import "unicode"
 
+func LengthOfLastWord(s string) int {
+	return lengthOfLastWord(s)
+}
+
 func lengthOfLastWord(s string) int {
 
 	last := 0

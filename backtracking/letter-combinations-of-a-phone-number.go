@@ -13,6 +13,10 @@ var letters = map[string][]string{
 	"9": {"w", "x", "y", "z"},
 }
 
+func LetterCombinations(digits string) []string {
+	return letterCombinations(digits)
+}
+
 func letterCombinations(digits string) []string {
 	if len(digits) == 0 {
 		return []string{}
