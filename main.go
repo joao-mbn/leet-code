@@ -3,26 +3,26 @@ package main
 
 import (
 	"fmt"
-	heap "leet-code/Heap"
+	math "leet-code/Math"
 )
 
 func main() {
 
 	for _, input := range []struct {
-		nums []int
-		k    int
+		num int
 	}{
-		{nums: []int{-1, 2, 0}, k: 1},
-		{nums: []int{3, 2, 3, 1, 2, 4, 5, 5, 6}, k: 4},
-		{nums: []int{3, 3, 3, 3}, k: 4},
-		{nums: []int{3, 3, 3, 3, 4}, k: 4},
-		{nums: []int{3, 3, 3, 3, 2}, k: 4},
-		{nums: []int{3}, k: 1},
-		{nums: []int{3, 3, 3, 1, 2}, k: 4},
-		{nums: []int{3, 3, 1, 2}, k: 3},
-		{nums: []int{3, 2, 1, 5, 6, 4}, k: 2},
+		{num: 4554},
+		{num: 100000001},
+		{num: 1000000001},
+		{num: 45654},
+		{num: 45},
+		{num: 121},
+		{num: 1234},
+		{num: 4},
+		{num: -9},
+		{num: -121},
 	} {
-		result := heap.FindKthLargest(input.nums, input.k)
+		result := math.IsPalindrome(input.num)
 		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
