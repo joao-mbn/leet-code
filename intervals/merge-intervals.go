@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/merge-intervals/?envType=study-plan-v2&envId=top-interview-150
 
-package main
+package intervals
 
 func merge(intervals [][]int) [][]int {
 	if len(intervals) < 2 {

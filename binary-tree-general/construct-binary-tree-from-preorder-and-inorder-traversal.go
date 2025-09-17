@@ -1,14 +1,11 @@
 // https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/?envType=study-plan-v2&envId=top-interview-150
 
-package tree
+package binarytreegeneral
 
-import "slices"
-
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+import (
+	"leet-code/tree"
+	"slices"
+)
 
 /**
  * Definition for a binary tree node.
@@ -18,8 +15,8 @@ type TreeNode struct {
  *     Right *TreeNode
  * }
  */
-func buildTree(preorder []int, inorder []int) *TreeNode {
-	root := &TreeNode{
+func buildTree(preorder []int, inorder []int) *tree.TreeNode {
+	root := &tree.TreeNode{
 		Val: preorder[0],
 	}
 

@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/h-index/?envType=study-plan-v2&envId=top-interview-150
 
-package main
+package arraystring
 
 import (
 	"slices"

@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/letter-combinations-of-a-phone-number/?envType=study-plan-v2&envId=top-interview-150
 
-package main
+package backtracking
 
 var letters = map[string][]string{
 	"2": {"a", "b", "c"},

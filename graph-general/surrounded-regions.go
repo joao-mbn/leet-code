@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/surrounded-regions/?envType=study-plan-v2&envId=top-interview-150
 
-package main
+package graphgeneral
 
 func solve(board [][]byte) {
 	visited := map[int]map[int]bool{}

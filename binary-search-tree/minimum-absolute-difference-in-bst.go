@@ -1,6 +1,8 @@
 // https://leetcode.com/problems/minimum-absolute-difference-in-bst/?envType=study-plan-v2&envId=top-interview-150
 
-package tree
+package binarysearchtree
+
+import "leet-code/tree"
 
 /**
  * Definition for a binary tree node.
@@ -10,7 +12,7 @@ package tree
  *     Right *TreeNode
  * }
  */
-func getMinimumDifference(root *TreeNode) int {
+func getMinimumDifference(root *tree.TreeNode) int {
 	minDiff := -1
 	sortedBST := inorderTraversal(root, []int{})
 
@@ -36,7 +38,7 @@ func abs(i int) int {
 	return i
 }
 
-func inorderTraversal(root *TreeNode, traversal []int) []int {
+func inorderTraversal(root *tree.TreeNode, traversal []int) []int {
 	if root == nil {
 		return traversal
 	}

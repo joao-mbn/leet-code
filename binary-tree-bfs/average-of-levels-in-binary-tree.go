@@ -1,6 +1,8 @@
 // https://leetcode.com/problems/average-of-levels-in-binary-tree/?envType=study-plan-v2&envId=top-interview-150
 
-package tree
+package binarytreebfs
+
+import "leet-code/tree"
 
 /**
  * Definition for a binary tree node.
@@ -10,7 +12,7 @@ package tree
  *     Right *TreeNode
  * }
  */
-func averageOfLevels(root *TreeNode) []float64 {
+func averageOfLevels(root *tree.TreeNode) []float64 {
 	track := avgTracker(root)
 	avgs := []float64{}
 
@@ -29,7 +31,7 @@ func averageOfLevels(root *TreeNode) []float64 {
 	return avgs
 }
 
-func avgTracker(root *TreeNode) [][]float64 {
+func avgTracker(root *tree.TreeNode) [][]float64 {
 	leftAvg := [][]float64{}
 	if root.Left != nil {
 		leftAvg = avgTracker(root.Left)

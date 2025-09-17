@@ -1,6 +1,8 @@
 // https://leetcode.com/problems/invert-binary-tree/?envType=study-plan-v2&envId=top-interview-150
 
-package tree
+package binarytreegeneral
+
+import "leet-code/tree"
 
 /**
  * Definition for a binary tree node.
@@ -10,12 +12,12 @@ package tree
  *     Right *TreeNode
  * }
  */
-func invertTree(root *TreeNode) *TreeNode {
+func invertTree(root *tree.TreeNode) *tree.TreeNode {
 	if root == nil {
 		return root
 	}
 
-	var prevLeft *TreeNode
+	var prevLeft *tree.TreeNode
 	if root.Left != nil {
 		prevLeftVal := *root.Left
 		prevLeft = &prevLeftVal

@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/candy/?envType=study-plan-v2&envId=top-interview-150
 
-package main
+package dynamicprogramming
 
 func candy(ratings []int) int {
 	size := len(ratings)

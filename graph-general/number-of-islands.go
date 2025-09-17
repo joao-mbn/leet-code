@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/number-of-islands/?envType=study-plan-v2&envId=top-interview-150
 
-package main
+package graphgeneral
 
 func numIslands(grid [][]byte) int {
 	count := 0

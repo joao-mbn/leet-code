@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/add-two-numbers/?envType=study-plan-v2&envId=top-interview-150
 
-package main
+package linkedlist
 
 // ListNode is the Definition for singly-linked list.
 type ListNode struct {

@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/gas-station/?envType=study-plan-v2&envId=top-interview-150
 
-package main
+package dynamicprogramming
 
 func canCompleteCircuit(gas []int, cost []int) int {
 
