@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-	math "leet-code/Math"
+	math "leet-code/math"
 )
 
 func main() {
