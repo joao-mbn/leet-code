@@ -3,26 +3,49 @@ package main
 
 import (
 	"fmt"
-	math "leet-code/math"
+	binarysearch "leet-code/binary-search"
 )
 
 func main() {
 
 	for _, input := range []struct {
-		num int
+		matrix [][]int
+		target int
 	}{
-		{num: 4554},
-		{num: 100000001},
-		{num: 1000000001},
-		{num: 45654},
-		{num: 45},
-		{num: 121},
-		{num: 1234},
-		{num: 4},
-		{num: -9},
-		{num: -121},
+		{target: 3, matrix: [][]int{
+			{1, 3, 5, 7},
+			{10, 11, 16, 20},
+			{23, 30, 34, 60},
+		}},
+		{target: 15, matrix: [][]int{
+			{1, 3, 5, 7},
+			{10, 11, 16, 20},
+			{23, 30, 34, 60},
+		}},
+		{target: 61, matrix: [][]int{
+			{1, 3, 5, 7},
+			{10, 11, 16, 20},
+			{23, 30, 34, 60},
+		}},
+		{target: 0, matrix: [][]int{
+			{1, 3, 5, 7},
+			{10, 11, 16, 20},
+			{23, 30, 34, 60},
+		}},
+		{target: 5, matrix: [][]int{
+			{1, 3, 5, 7},
+		}},
+		{target: 5, matrix: [][]int{
+			{1},
+			{3},
+			{5},
+			{7},
+		}},
+		{target: 5, matrix: [][]int{
+			{1},
+		}},
 	} {
-		result := math.IsPalindrome(input.num)
+		result := binarysearch.SearchMatrix(input.matrix, input.target)
 		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
