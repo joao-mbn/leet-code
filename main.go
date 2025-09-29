@@ -3,22 +3,34 @@ package main
 
 import (
 	"fmt"
-	divideandconquer "leet-code/divide-and-conquer"
-	linkedlist "leet-code/linked-list"
+	"leet-code/matrix"
 )
 
 func main() {
 
 	for _, input := range []struct {
-		slice []int
+		matrix [][]int
 	}{
-		{slice: []int{1, 2, 3, 4, 5}},
-		{slice: []int{4, 1, 2, 3}},
-		{slice: []int{-1, 5, 3, 4, 0}},
-		{slice: []int{}},
-		{slice: []int{-1}},
+		{matrix: [][]int{
+			{1, 2, 3},
+			{4, 5, 6},
+			{7, 8, 9},
+		}},
+		{matrix: [][]int{
+			{5, 1, 9, 11},
+			{2, 4, 8, 10},
+			{13, 3, 6, 7},
+			{15, 14, 12, 16},
+		}},
+		{matrix: [][]int{
+			{1, 2, 3, 4, 5},
+			{6, 7, 8, 9, 10},
+			{11, 12, 13, 14, 15},
+			{16, 17, 18, 19, 20},
+			{21, 22, 23, 24, 25},
+		}},
 	} {
-		result := divideandconquer.SortList(linkedlist.FromSlice(input.slice))
-		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, linkedlist.ToSlice(result))
+		matrix.Rotate(input.matrix)
+		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, input.matrix)
 	}
 }
