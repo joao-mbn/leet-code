@@ -3,34 +3,18 @@ package main
 
 import (
 	"fmt"
-	"leet-code/matrix"
+	"leet-code/hashmap"
 )
 
 func main() {
 
 	for _, input := range []struct {
-		matrix [][]int
+		ransomNote string
+		magazine   string
 	}{
-		{matrix: [][]int{
-			{1, 2, 3},
-			{4, 5, 6},
-			{7, 8, 9},
-		}},
-		{matrix: [][]int{
-			{5, 1, 9, 11},
-			{2, 4, 8, 10},
-			{13, 3, 6, 7},
-			{15, 14, 12, 16},
-		}},
-		{matrix: [][]int{
-			{1, 2, 3, 4, 5},
-			{6, 7, 8, 9, 10},
-			{11, 12, 13, 14, 15},
-			{16, 17, 18, 19, 20},
-			{21, 22, 23, 24, 25},
-		}},
+		{ransomNote: "fihjjjjei", magazine: "hjibagacbhadfaefdjaeaebgi"},
 	} {
-		matrix.Rotate(input.matrix)
-		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, input.matrix)
+		result := hashmap.CanConstruct(input.ransomNote, input.magazine)
+		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
