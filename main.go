@@ -3,22 +3,25 @@ package main
 
 import (
 	"fmt"
-	linkedlist "leet-code/linked-list"
+	binarytreegeneral "leet-code/binary-tree-general"
+	treenode "leet-code/tree"
 )
 
 func main() {
 
 	for _, input := range []struct {
-		head []int
-		n    int
+		root *treenode.TreeNode
 	}{
-		{head: []int{1}, n: 1},
-		{head: []int{1, 2}, n: 1},
-		{head: []int{1, 2, 3}, n: 3},
-		{head: []int{1, 2, 3, 4, 5}, n: 2},
-		{head: []int{1, 2, 3, 4, 5}, n: 4},
+		{root: &treenode.TreeNode{
+			Val: 1,
+			Left: &treenode.TreeNode{
+				Val:   2,
+				Right: &treenode.TreeNode{Val: 4},
+			},
+			Right: &treenode.TreeNode{Val: 5},
+		}},
 	} {
-		result := linkedlist.RemoveNthFromEnd(linkedlist.FromSlice(input.head), input.n)
-		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, linkedlist.ToSlice(result))
+		binarytreegeneral.Flatten(input.root)
+		fmt.Printf("Given the inputs: %v, the result is: %v\n", input)
 	}
 }
