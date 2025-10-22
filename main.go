@@ -3,17 +3,21 @@ package main
 
 import (
 	"fmt"
-	"leet-code/hashmap"
+	"leet-code/stack"
 )
 
 func main() {
 
 	for _, input := range []struct {
-		s, t string
+		s string
 	}{
-		{s: "nagaram", t: "anagram"},
+		{s: "0"},
+		{s: "1"},
+		{s: "1 + 1"},
+		{s: " 2-1 + 2 "},
+		{s: "(1+(4+5+2)-3)+(6+8)"},
 	} {
-		result := hashmap.IsAnagram(input.s, input.t)
+		result := stack.Calculate(input.s)
 		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
