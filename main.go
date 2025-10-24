@@ -3,21 +3,18 @@ package main
 
 import (
 	"fmt"
-	"leet-code/stack"
+	"leet-code/intervals"
 )
 
 func main() {
 
 	for _, input := range []struct {
-		s string
+		intervals   [][]int
+		newInterval []int
 	}{
-		{s: "0"},
-		{s: "1"},
-		{s: "1 + 1"},
-		{s: " 2-1 + 2 "},
-		{s: "(1+(4+5+2)-3)+(6+8)"},
+		{intervals: [][]int{{3, 5}, {12, 15}}, newInterval: []int{6, 6}},
 	} {
-		result := stack.Calculate(input.s)
+		result := intervals.Insert(input.intervals, input.newInterval)
 		fmt.Printf("Given the inputs: %v, the result is: %v\n", input, result)
 	}
 }
