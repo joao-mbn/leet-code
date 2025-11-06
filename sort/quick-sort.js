@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var mergeSort = function(nums, leftWall = 0, pivotIndex = nums.length - 1) {
+var quickSort = function(nums, leftWall = 0, pivotIndex = nums.length - 1) {
   if (leftWall >= pivotIndex) {
     return
   }
@@ -18,7 +18,7 @@ var mergeSort = function(nums, leftWall = 0, pivotIndex = nums.length - 1) {
     }
 
     swapPointer++
-    if (swapPointer == i) {
+    if (swapPointer === i) {
       continue
     }
 
@@ -27,12 +27,12 @@ var mergeSort = function(nums, leftWall = 0, pivotIndex = nums.length - 1) {
   }
 
   if (swapPointer > 0) {
-    mergeSort(nums, leftWall, swapPointer - 1)
+    quickSort(nums, leftWall, swapPointer - 1)
   }
 
-  mergeSort(nums, swapPointer + 1, pivotIndex)
+  quickSort(nums, swapPointer + 1, pivotIndex)
 }
 
 const nums = [3, 2, 5, 0, 1, 8, 7, 6, 9, 4]
-mergeSort(nums)
+quickSort(nums)
 console.log(nums)
